@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/boo/image-removebg-preview (1).png.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<!-- <script src="explore.js" defer></script> -->
+
+<body>
+
+
+    <section class="body_explore">
+        <!-- ===================================================================
+            ====================================================Open Cart page================================ -->
+
+        <div class="cart_parent_explore">
+
+            <nav class="navbar_cart">
+                <a href="#" onclick="homepage()"><i class="fa-solid fa-arrow-left icons"></i></a>
+                <!-- <input type="text" name="search" id="search" placeholder="search" class="search_cart"> -->
+                <i class="fa-solid fa-magnifying-glass icons"></i>
+            </nav>
+
+            <div class="cart_head">
+                <img src="images/cart_head.png" alt="cart_head">
+                <div class="cart_head_title">
+                    <h3 class="cart_title">Cart</h3>
+                    <p class="cart_below_title">Urban Bazaar</p>
+                </div>
+
+            </div>
+
+            <!-- ===============demo cart item================ -->
+            <div class="cart_item_list">
+                <div class="cart_left">
+                    <img src="images/spicy.png" alt="cart_image">
+                    <div class="cart_left_content">
+                        <h3>Fruits</h3>
+                        <h4>900 gms</h4>
+                        <p>Save ₹
+                            <span>5</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="cart_right_content">
+                    <p class="cart_main_price">₹<span>100</span></p>
+                </div>
+            </div>
+
+            <div class="cart_item_list">
+                <div class="cart_left">
+                    <img src="images/sweet.png" alt="cart_image">
+                    <div class="cart_left_content">
+                        <h3>Kisses Choclate</h3>
+                        <h4>1100 gms</h4>
+                        <p>Save ₹
+                            <span>100</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="cart_right_content">
+                    <p class="cart_main_price">₹<span>400</span></p>
+                </div>
+            </div>
+
+            <!-- ===============if cart is empty cart item================ -->
+            <div class="cart_list_items">
+                <div class="empty_div">
+                    <h3 class="empty_cart">Cart is empty !</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

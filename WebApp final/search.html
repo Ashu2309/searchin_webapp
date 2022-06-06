@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/boo/image-removebg-preview (1).png.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<!-- <script src="explore.js" defer></script> -->
+
+<body>
+
+
+    <section class="body_explore">
+        <!-- ==========================categories page======================= -->
+
+        <div class="categories_main">
+            <nav class="navbar_cart search_page">
+                <a href="#" onclick="homepage()"><i class="fa-solid fa-arrow-left icons"></i></a>
+                <div class="search_div">
+                    <input type="text" name="search" id="search" class="search_cart">
+                    <img class="search_icons" src="ui_components/black_Search.png" alt="search">
+                    <i class="fa-solid fa-xmark cross_icons"></i>
+                </div>
+            </nav>
+
+            <div class="categories_items">
+
+                <!-- =================demo div -->
+                <div class="categories_item">
+                    <img src="images/images (3).png">
+                    <div>
+                        <h2>Kisses Choclate</h2>
+                        <div class="mid_category_up">
+                            <div>
+                                <h4>200 gms</h4>
+                                <p>₹ <span>100</span><span>₹105</span></p>
+                                <h6>Save ₹5</h6>
+                            </div>
+                            <div class="mid_category_below">
+                                <button><i class="fa-solid fa-plus add_cate"></i>Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories_item">
+                    <img src="images/Image 5.png">
+                    <div>
+                        <h2>Spicy</h2>
+                        <div class="mid_category_up">
+                            <div>
+                                <h4>200 gms</h4>
+                                <p>₹<span>400</span><span>₹205</span></p>
+                                <h6>Save ₹5</h6>
+                            </div>
+                            <div class="mid_category_below">
+                                <button><i class="fa-solid fa-plus add_cate "></i>Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories_item">
+                    <img src="images/images (3).png">
+                    <div>
+                        <h2>Kisses Choclate</h2>
+                        <div class="mid_category_up">
+                            <div>
+                                <h4>200 gms</h4>
+                                <p>₹ <span>100</span><span>₹105</span></p>
+                                <h6>Save ₹5</h6>
+                            </div>
+                            <div class="mid_category_below">
+                                <button><i class="fa-solid fa-plus add_cate"></i>Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories_item">
+                    <img src="images/Image 5.png">
+                    <div>
+                        <h2>Spicy</h2>
+                        <div class="mid_category_up">
+                            <div>
+                                <h4>200 gms</h4>
+                                <p>₹<span>400</span><span>₹205</span></p>
+                                <h6>Save ₹5</h6>
+                            </div>
+                            <div class="mid_category_below">
+                                <button><i class="fa-solid fa-plus add_cate "></i>Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script>
+        const show_title = (lists) => {
+            // alert("clicked");
+            document.querySelector(".dp_head").innerText = lists;
+        }
+
+        let dropdown = document.querySelector(".dropdown");
+        let dp_head_span = document.querySelector(".dp_head_span");
+
+        dropdown.onclick = function () {
+            dropdown.classList.toggle('active_dropdown');
+            dp_head_span.classList.toggle('active_dropdown');
+            console.log(dropdown);
+        }
+    </script>
+</body>
+
+</html>
